@@ -1,0 +1,34 @@
+import random 
+import math
+
+
+x = math.sqrt(4)
+
+print("Version " + str(x))
+
+dice1 = random.randint(1,6)
+dice2 = random.randint(1,6)
+
+sum1 = (dice1 + dice2)
+
+
+print("you have just rolled "+ str(dice1) + " and " +str(dice2))
+print("you have rolled a total of " + str(sum1) + " on your two dice")
+
+print(type(dice1))
+
+print("good luck getting it to 12 :)" )
+
+
+if (sum1 == 12):
+  print("YOU GOT A 12")
+  print(str(random.randint(1,3)) + " points added to your score ")
+ 
+elif(sum == 11):
+  print("you have almost gotten a 12")
+  print("no points have been added or lost for that spin")
+  print("your doing great!!")  
+else:
+  print("your bad")
+  print("good luck getting a 12 LOL")
+  print(str(random.randint(1,3)) + " points have been lost to your score loser LOL")
