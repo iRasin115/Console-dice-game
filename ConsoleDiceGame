@@ -1,24 +1,18 @@
 import random 
-import math
 
+version = "1.1"
 
-x = math.sqrt(4)
-
-print("Version " + str(x))
+print("Version: " + version)
 
 dice1 = random.randint(1,6)
 dice2 = random.randint(1,6)
 
 sum1 = (dice1 + dice2)
 
-
 print("you have just rolled "+ str(dice1) + " and " +str(dice2))
 print("you have rolled a total of " + str(sum1) + " on your two dice")
 
-print(type(dice1))
-
 print("good luck getting it to 12 :)" )
-
 
 if (sum1 == 12):
   print("YOU GOT A 12")
